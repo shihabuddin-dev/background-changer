@@ -66,10 +66,22 @@
             background-color: red;
             border-radius: 0.65rem;
         }
+
+        #color-random {
+            display: flex;
+            align-items: center;
+            /* margin-left: 550px; */
+            text-align: center;
+            font-size: x-large;
+            width: 10rem;
+            height: 10rem;
+            background-color: goldenrod;
+            border-radius: 0.65rem;
+        }
     </style>
 </head>
 
-<body>
+<body id="body">
     <h1>You Can Change Background Color Just Click</h1>
     <!-- all color section  -->
     <section>
@@ -81,9 +93,9 @@
         <div id="color-yellow"></div>
         <div id="color-orange"></div>
         <div id="color-red"></div>
+        <br>
+        <div onclick="changeBgColor()" id="color-random">Random Color Changer</div>
     </section>
-
-
 
     <script src="js/app.js"></script>
 </body>

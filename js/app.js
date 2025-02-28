@@ -20,3 +20,9 @@ document.getElementById('color-orange').addEventListener('click', function () {
 document.getElementById('color-red').addEventListener('click', function () {
     document.body.style.backgroundColor = 'red';
 });
+
+// Change random background color 
+function changeBgColor() {
+    const randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
+    document.getElementById("body").style.backgroundColor = randomColor;
+}
